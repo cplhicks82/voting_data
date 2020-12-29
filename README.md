@@ -1,1 +1,5 @@
 # voting_data
+Since we just completed a fairly tumultuous election season, I thought that finding some data on voter turnout and basic racial demographics by state would be timely and interesting. I was able to find some decent data in CSV format that I could examine and manipulate using Jupyter and Python (with the Pandas library in particular). Having just started learning MS SQL Server, I also wanted to clean the data in such a manner that it would be easily imported to a table in SSMS, where I could script some basic queries, joins, and views on the tables. The goal was to see how racial demographics possibly contributed to state voter turnout, and how racial demographics/turnout affected the Presidential vote.
+
+I had to perform some dataframe manipulation on both of the CSV files in order to make them palatable for SSMS. Then, I used the Pyodbc library to be able to connect my notebooks to SSMS. Once the connection was established, I used Python code to create the tables I wanted in SSMS. After that I used Python to transfer and translate the dataframes into the SSMS tables.
+
